@@ -1,7 +1,7 @@
 import React from 'react';
 import './FirstComponent.css';
 
-const FirstComponent = () => {
+const FirstComponent = (props) => {
     return (
         <div>
             <p>
