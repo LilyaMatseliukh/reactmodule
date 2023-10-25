@@ -1,40 +1,24 @@
 import React from 'react';
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 const App = () => {
-    let [counter, setCounter] = useState(0);
-    // const [users, setUsers] = useState([]);
+    let [counter, setCounter] = useState({value: 0});
     const onClickDecrement = () => {
-        counter--;
-        setCounter(counter);
+        counter.value--;
+        setCounter({...counter});
     }
     const onCLickIncrement = () => {
-        counter++;
-        setCounter(counter);
+        counter.value++;
+        setCounter({...counter});
     }
-
-    // useEffect( () => {
-    //     fetch('https://jsonplaceholder.typicode.com/users')
-    //         .then(value => value.json())
-    //         .then(value => {
-    //             console.log('asd')
-    //             setUsers(value)
-    //         })
-    // }, [])
 
     return (
         <div className="App">
-            {/*{*/}
-            {/*    users.map(value => (*/}
-            {/*        <div key={value.id}>{value.name}</div>*/}
-            {/*    ))*/}
-            {/*}*/}
-            <h1>counter: {counter}</h1>
+            <h1>counter: {counter.value}</h1>
             <button onClick={onCLickIncrement}>+</button>
             <button onClick={onClickDecrement}>-</button>
         </div>
     );
-
 };
 
 export {App};
