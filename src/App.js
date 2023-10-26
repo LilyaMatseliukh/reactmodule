@@ -1,9 +1,10 @@
 import React from 'react';
+import SimpsonsComponent from "./components/Simpsons/SimpsonsComponent";
 
 const App = () => {
   return (
       <div>
-          App
+         <SimpsonsComponent/>
       </div>
   );
 };
