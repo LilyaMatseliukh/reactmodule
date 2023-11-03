@@ -1,8 +1,8 @@
 const baseURL = 'https://jsonplaceholder.typicode.com';
-const post = '/post';
+const post = '/posts';
 const urls = {
     post: {
-        post: post,
+        base: post,
         byId: (id) => `${post}/${id}`
     }
 }

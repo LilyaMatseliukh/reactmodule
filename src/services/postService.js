@@ -1,4 +1,9 @@
 import {axiosService} from "./axiosService";
 import {urls} from "../constants/urls";
 
-const postService = axiosService.get(urls.post.post)
+const postService = {
+    getAll: () => axiosService.get(urls.post.base),
+    getById: (id) => axiosService.get(urls.post.byId(id))
+}
+
+export {postService};
