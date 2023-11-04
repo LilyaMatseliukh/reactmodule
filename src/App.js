@@ -1,10 +1,10 @@
 import React from 'react';
-import ShipsLaunch from "./components/ShipsContainer/ShipsLaunch/ShipsLaunch";
+import Ships from "./components/ShipsContainer/Ships/Ships";
 
 const App = () => {
   return (
       <div>
-          <ShipsLaunch/>
+          <Ships/>
       </div>
   );
 };
