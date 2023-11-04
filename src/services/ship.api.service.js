@@ -1,8 +1,13 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: 'https://api.spacexdata.com/v3/launches/',
+    baseURL: 'https://api.spacexdata.com',
     headers: {}
 });
 
-export {axiosInstance};
+const getAllShips = () => {
+    return axiosInstance.get('/v3/launches/')
+}
+
+export {axiosInstance, getAllShips};
+

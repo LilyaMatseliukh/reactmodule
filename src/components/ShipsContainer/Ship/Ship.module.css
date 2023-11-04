@@ -1,0 +1,6 @@
+.Ship {
+    margin: 10px;
+    border: 1px solid #383838;
+    box-shadow: 5px 5px 5px gray;
+    width: calc(30% - 22px);
+}
