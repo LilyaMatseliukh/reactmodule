@@ -1,9 +1,10 @@
 import React from 'react';
+import {CarsContainer} from "./CarsContainer/CarsContainer";
 
 const App = () => {
   return (
       <div>
-          App
+          <CarsContainer/>
       </div>
   );
 };
