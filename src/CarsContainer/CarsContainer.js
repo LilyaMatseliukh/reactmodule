@@ -8,6 +8,7 @@ const CarsContainer = () => {
     const [cars, setCars] = useState([]);
     // const [trigger, setTrigger] = useState(null);
     const [trigger, setTrigger] = useState(true);
+    const [carForUpdate, setCarForUpdate] = useState(null);
 
     useEffect(() => {
         carService.getAll().then(({data}) => setCars(data))
@@ -15,9 +16,9 @@ const CarsContainer = () => {
 
     return (
         <div>
-            <CarForm setTrigger={setTrigger}/>
+            <CarForm setTrigger={setTrigger} carForUpdate={carForUpdate}/>
             <hr/>
-            <Cars cars={cars}/>
+            <Cars cars={cars} setCarForUpdate={setCarForUpdate}/>
         </div>
     );
 };
