@@ -20,7 +20,7 @@ const CarForm = ({setTrigger, carForUpdate, cars}) => {
     }, [carForUpdate])
 
     const save = async (car) => {
-        if (car.id === null) {
+        if (!carForUpdate) {
             await carService.create(car);
             setTrigger(prev => !prev);
             reset();
