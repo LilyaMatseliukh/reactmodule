@@ -5,7 +5,7 @@ import {joiResolver} from "@hookform/resolvers/joi";
 import {carService} from "../services/carService";
 import {carValidator} from "../validators/carValidator";
 
-const CarForm = ({setTrigger, carForUpdate, click}) => {
+const CarForm = ({setTrigger, carForUpdate}) => {
     const {register, reset, handleSubmit, formState: {isValid, errors}, setValue, getValues} = useForm({
         mode: 'onSubmit',
         resolver: joiResolver(carValidator)
@@ -16,6 +16,8 @@ const CarForm = ({setTrigger, carForUpdate, click}) => {
             setValue('brand', carForUpdate.brand, {shouldValidate: true})
             setValue('price', carForUpdate.price, {shouldValidate: true})
             setValue('year', carForUpdate.year, {shouldValidate: true})
+
+            carService.updateById(carForUpdate.id, carForUpdate)
         }
 
     }, [carForUpdate])

@@ -1,5 +1,4 @@
 import React from 'react';
-import {click} from "@testing-library/user-event/dist/click";
 
 const Car = ({car, setCarForUpdate, click}) => {
     const {id, brand, price, year} = car;
@@ -10,10 +9,7 @@ const Car = ({car, setCarForUpdate, click}) => {
             <div>brand: {brand}</div>
             <div>price: {price}</div>
             <div>year: {year}</div>
-            <button onClick={() => {
-                setCarForUpdate(car)
-                click(id)
-            }}>update
+            <button onClick={() => {setCarForUpdate(car)}}>update
             </button>
             <button>delete</button>
         </div>
