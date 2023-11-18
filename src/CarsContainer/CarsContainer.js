@@ -3,8 +3,9 @@ import React, {useEffect, useState} from 'react';
 import {carService} from "../services/carService";
 import {Cars} from "./Cars";
 import {CarForm} from "./CarForm";
+import {click} from "@testing-library/user-event/dist/click";
 
-const CarsContainer = () => {
+const CarsContainer = ({click}) => {
     const [cars, setCars] = useState([]);
     // const [trigger, setTrigger] = useState(null);
     const [trigger, setTrigger] = useState(true);
@@ -16,9 +17,9 @@ const CarsContainer = () => {
 
     return (
         <div>
-            <CarForm setTrigger={setTrigger} carForUpdate={carForUpdate}/>
+            <CarForm setTrigger={setTrigger} carForUpdate={carForUpdate} click={click}/>
             <hr/>
-            <Cars cars={cars} setCarForUpdate={setCarForUpdate}/>
+            <Cars cars={cars} setCarForUpdate={setCarForUpdate} click={click}/>
         </div>
     );
 };
