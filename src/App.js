@@ -1,9 +1,10 @@
 import React from 'react';
+import UsersContainer from "./UsersContainer/UsersContainer";
 
 const App = () => {
   return (
       <div>
-          App
+          <UsersContainer/>
       </div>
   );
 };
