@@ -17,7 +17,7 @@ const CarForm = ({setTrigger, carForUpdate, cars}) => {
             setValue('price', carForUpdate.price, {shouldValidate: true})
             setValue('year', carForUpdate.year, {shouldValidate: true})
         }
-    }, [carForUpdate])
+    }, [carForUpdate]);
 
     const save = async (car) => {
         if (!carForUpdate) {
@@ -29,7 +29,14 @@ const CarForm = ({setTrigger, carForUpdate, cars}) => {
             setTrigger(prev => !prev);
             reset();
         }
-    }
+    };
+
+    // const save = async (car) => {
+    //     // const {data} = await carService.create(car);
+    //     await carService.create(car);
+    //     setTrigger(prev => !prev);
+    //     reset();
+    // };
 
     return (
         <>
