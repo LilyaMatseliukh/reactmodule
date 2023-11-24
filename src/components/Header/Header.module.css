@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.Header {
+    width: 100%;
+    height: 20vh;
+    background-color: #775342;;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-decoration: none;
+    color: snow;
+}

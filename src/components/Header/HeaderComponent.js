@@ -1,11 +1,16 @@
 import React from 'react';
 
-import css from './HeaderComponent.css'
+import css from './Header.module.css'
+import {Link} from "react-router-dom";
 
 const HeaderComponent = () => {
     return (
-        <div className={css.Header}>
-            <a>fff</a>
+        <div>
+            <header className={css.Header}>
+                <Link to={'todos'}>todos</Link>
+                <Link to={'albums'}>albums</Link>
+                <Link to={'comments'}>comments</Link>
+            </header>
         </div>
     );
 };
