@@ -3,7 +3,7 @@ import {postsService} from "../../services/postsService";
 import PostComponent from "./PostComponent";
 
 const PostsComponent = ({postId}) => {
-    const [posts, setPosts] = useState([]);
+    const [post, setPosts] = useState({});
 
     useEffect(() => {
         postsService.getByPostId(postId).then(({data}) => setPosts(data))
@@ -11,9 +11,11 @@ const PostsComponent = ({postId}) => {
 
     return (
         <div>
-            {
-                posts.map(post => <PostComponent key={post.id} post={post}/>)
-            }
+            {/*{*/}
+            {/*    posts.map(post => <PostComponent key={post.id} post={post}/>)*/}
+            {/*}*/}
+
+            <PostComponent key={post.id} post={post}/>
         </div>
     );
 };
