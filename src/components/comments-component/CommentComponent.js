@@ -13,7 +13,7 @@ const CommentComponent = ({comment}) => {
             <div>name: {name}</div>
             <div>email: {email}</div>
             <div>body: {body}</div>
-            <button onClick={() => navigate('post', {state: postId})}>get post</button>
+            <button onClick={() => navigate('posts', {state: postId})}>get post</button>
         </div>
     );
 };

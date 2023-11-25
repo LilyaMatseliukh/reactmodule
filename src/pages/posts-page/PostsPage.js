@@ -4,7 +4,7 @@ import PostsComponent from "../../components/posts-component/PostsComponent";
 
 const PostsPage = () => {
     const {state: postId} = useLocation();
-console.log(postId)
+
     return (
         <div>
             <PostsComponent postId={postId}/>

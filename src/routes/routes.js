@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
                 element: <CommentsPage/>
             },
             {
-                path: 'comments/post',
+                path: 'comments/posts',
                 element: <PostsPage/>
             }
         ]
