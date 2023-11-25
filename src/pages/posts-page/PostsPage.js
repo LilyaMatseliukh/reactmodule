@@ -1,5 +1,6 @@
 import React from 'react';
 import {useLocation} from "react-router-dom";
+
 import PostsComponent from "../../components/posts-component/PostsComponent";
 
 const PostsPage = () => {

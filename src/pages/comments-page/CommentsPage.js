@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CommentsComponent from "../../components/comments-component/CommentsComponent";
 
 const CommentsPage = () => {

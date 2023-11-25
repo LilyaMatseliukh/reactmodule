@@ -1,4 +1,5 @@
 import React from 'react';
+
 import AlbumsComponent from "../../components/albums-component/AlbumsComponent";
 
 const AlbumsPage = () => {

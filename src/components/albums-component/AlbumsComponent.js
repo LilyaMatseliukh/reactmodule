@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import {albumsService} from "../../services/albumsService";
 import AlbumComponent from "./AlbumComponent";
 
@@ -7,7 +8,7 @@ const AlbumsComponent = () => {
 
     useEffect(() => {
         albumsService.getAll().then(({data}) => setAlbums(data))
-    }, [])
+    }, []);
 
 
     return (

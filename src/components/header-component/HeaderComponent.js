@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 import css from './HeaderComponent.module.css'
 
@@ -7,9 +7,9 @@ const HeaderComponent = () => {
     return (
         <div>
             <header className={css.Header}>
-                <Link to={'todos'}>todos</Link>
-                <Link to={'albums'}>albums</Link>
-                <Link to={'comments'}>comments</Link>
+                <NavLink to={'todos'}>todos</NavLink>
+                <NavLink to={'albums'}>albums</NavLink>
+                <NavLink to={'comments'}>comments</NavLink>
             </header>
         </div>
     );
