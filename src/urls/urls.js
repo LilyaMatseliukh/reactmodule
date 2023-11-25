@@ -9,11 +9,11 @@ const urls = {
     todos,
     albums,
     comments,
-    // posts: {
-    //     base: posts,
-    //     byPostId: (postId) => `${posts}/${postId}`
-    // }
-    byPostId: (postId) => `/posts/${postId}`
+    posts: {
+        base: posts,
+        byPostId: (postId) => `/posts/${postId}`
+    }
+    // byPostId: (postId) => `/posts/${postId}`
 };
 
 export {baseURL, urls};
