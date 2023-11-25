@@ -11,9 +11,9 @@ const PostsComponent = ({postId}) => {
 
     return (
         <div>
-            {/*{*/}
-            {/*    posts.map(post => <PostComponent key={post.id} post={post}/>)*/}
-            {/*}*/}
+            {
+                posts.map(post => <PostComponent key={post.id} post={post}/>)
+            }
         </div>
     );
 };
