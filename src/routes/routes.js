@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import TodosPage from "../pages/todos-page/TodosPage";
 import AlbumsPage from "../pages/albums-page/AlbumsPage";
 import CommentsPage from "../pages/comments-page/CommentsPage";
+import PostPage from "../pages/post-page/PostPage";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
             {
                 path: 'comments',
                 element: <CommentsPage/>
+            },
+            {
+                path: 'post',
+                element: <PostPage/>
             }
         ]
     }
