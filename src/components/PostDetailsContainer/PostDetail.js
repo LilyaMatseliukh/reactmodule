@@ -14,7 +14,7 @@ const PostDetail = ({post}) => {
                 <p>Id: {id}</p>
                 <p>Title: {title}</p>
                 <p>Body: {body}</p>
-                <button onClick={() => navigate('comments', {state: {id}})}>Comments</button>
+                <button onClick={() => navigate(`comments/${id}`, {state: {id}})}>Comments</button>
             </div>
     );
 };

@@ -4,12 +4,12 @@ import {commentsService} from "../../services/commentsService";
 import Comment from "./Comment";
 import css from './Comments.module.css';
 
-const Comments = ({id}) => {
-    const [comments, setComments] = useState([]);
-
-    useEffect(() => {
-        commentsService.getByPostId(id).then(({data}) => setComments(data))
-    }, [id])
+const Comments = ({comments}) => {
+    // const [comments, setComments] = useState([]);
+    //
+    // useEffect(() => {
+    //     commentsService.getByPostId(id).then(({data}) => setComments(data))
+    // }, [id]);
 
     return (
         <div className={css.commentsBlock}>

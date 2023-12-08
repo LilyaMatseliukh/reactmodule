@@ -15,7 +15,7 @@ const UserDetails = ({user}) => {
             <p>username: {username}</p>
             <p>email: {email}</p>
             <p>phone: {phone}</p>
-            <button onClick={() => navigate('posts', {state: {id}})}>Post of current user</button>
+            <button onClick={() => navigate(`posts/${id}`, {state: {id}})}>Post of current user</button>
         </div>
     );
 };

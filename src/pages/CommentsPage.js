@@ -1,14 +1,18 @@
 import React from 'react';
-import {useLocation} from "react-router-dom";
+import {useLoaderData, useLocation} from "react-router-dom";
+
 import Comments from "../components/CommentsContainer/Comments";
 
 const CommentsPage = () => {
-    const {state: {id}} = useLocation();
-    console.log(id);
+    // const {state: {id}} = useLocation();
+    // console.log(id);
+
+    const {data: comments} = useLoaderData();
 
     return (
         <div>
-            <Comments id={id}/>
+            {/*<Comments id={id}/>*/}
+            <Comments comments={comments}/>
         </div>
     );
 };

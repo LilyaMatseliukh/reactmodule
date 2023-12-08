@@ -1,15 +1,18 @@
 import React from 'react';
-import {useLocation} from "react-router-dom";
+import {useLoaderData, useLocation} from "react-router-dom";
 
 import Posts from "../components/PostsContainer/Posts";
 
 const PostsPage = () => {
-    const {state: {id}} = useLocation();
-    console.log(id)
+    // const {state: {id}} = useLocation();
+    // console.log(id)
+
+    const {data: posts} = useLoaderData();
 
     return (
         <div>
-            <Posts id={id}/>
+            {/*<Posts id={id}/>*/}
+            <Posts posts={posts}/>
         </div>
     );
 };
