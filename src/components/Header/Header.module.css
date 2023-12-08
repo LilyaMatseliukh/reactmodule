@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.Header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: brown;
+    height: 75px;
+}
+
+.Header button {
+    margin-left: 50px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: bisque;
+    font-size: 15px;
+    font-family: "Bookman Old Style";
+}
+
+.Header button:hover{
+    transform: scale(1.1);
+    transition: 0.05s;
+}

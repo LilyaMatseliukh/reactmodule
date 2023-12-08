@@ -1,0 +1,17 @@
+.commentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 235px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: bisque;
+}
+
+.commentBlock p {
+    font-size: 14px;
+    font-family: "Bookman Old Style";
+}

@@ -1,0 +1,34 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: brown;
+}
+
+.Post p {
+    font-size: 14px;
+    font-family: "Bookman Old Style";
+    color: snow;
+}
+
+.Post button {
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 40px;
+    font-family: "Bookman Old Style";
+    background-color: bisque;
+}
+
+.Post button:hover{
+    transform: scale(1.1);
+    transition: 0.05s;
+}
