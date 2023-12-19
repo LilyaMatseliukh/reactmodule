@@ -1,0 +1,76 @@
+/*.Main {*/
+/*    width: 1200px;*/
+/*    !*border: 1px solid blue;*!*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.Part {*/
+/*    width: 298px;*/
+/*    border: 1px solid black;*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+
+
+
+
+/*table {*/
+/*    !*border: 1px solid black;*!*/
+/*    width: 1200px;*/
+/*    border-collapse: collapse;*/
+
+/*}*/
+
+/*td {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+
+
+table {
+    /*border: 1px solid black;*/
+    width: 1200px;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+
+}
+
+td {
+    width: 288px;
+    border: 1px solid black;
+}
+
+
+
+
+
+/*table {*/
+/*    text-align: left;*/
+/*    position: relative;*/
+/*    border-collapse: collapse;*/
+/*    background-color: #f6f6f6;*/
+/*}!* Spacing *!*/
+/*td, th {*/
+/*    border: 1px solid #999;*/
+/*    padding: 20px;*/
+/*}*/
+/*th {*/
+/*    background: brown;*/
+/*    color: white;*/
+/*    border-radius: 0;*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    padding: 10px;*/
+/*}*/
+/*.primary{*/
+/*    background-color: #000000*/
+/*}*/
+
+/*tfoot > tr  {*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+/*tbody > tr:hover {*/
+/*    background-color: #ffc107;*/
+/*}*/
