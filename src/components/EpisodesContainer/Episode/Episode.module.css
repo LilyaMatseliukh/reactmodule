@@ -1,0 +1,9 @@
+.Episode {
+    border: 1px solid;
+    width: calc(20% - 2px);
+    border-collapse: collapse;
+}
+
+.Episode a {
+    text-decoration: none;
+}
