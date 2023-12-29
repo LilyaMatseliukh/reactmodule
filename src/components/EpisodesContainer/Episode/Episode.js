@@ -13,7 +13,7 @@ const Episode = ({episode}) => {
     const navigate = useNavigate();
 
     return (
-        <div className={css.Episode}>
+        <div className={css.Episode} onClick={() => navigate('/characters', {state: id})}>
             id: {id}
             <br/>
             name: {name}

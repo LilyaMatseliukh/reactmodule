@@ -7,9 +7,9 @@ import Component1 from "../components/component1";
 const MainLayout = () => {
     return (
         <div>
-            {/*<Header/>*/}
-            {/*<Outlet/>*/}
-            <Component1/>
+            <Header/>
+            <Outlet/>
+            {/*<Component1/>*/}
         </div>
     );
 };

@@ -1,24 +1,41 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
+import Character from "./character";
+// import * as constants from "constants";
 
 const Component1 = () => {
 
-    const [characters, setCharacters] = useState([]);
+        // let charactersArray = [
+        //     'https://rickandmortyapi.com/api/character/2',
+        //     'https://rickandmortyapi.com/api/character/35',
+        //     'https://rickandmortyapi.com/api/character/38'
+        // ]
+        //
+        // const [characters1, setCharacters1] = useState([]);
+        //
+        // useEffect(() => {
+        //     charactersArray.map(character => {
+        //         fetch(character)
+        //             .then(value => value.json())
+        //     });
+        // }, []);
+        //
+        // console.log(characters1)
 
-    useEffect(() => {
-        fetch('https://rickandmortyapi.com/api/episode/1')
-            .then(value => value.json())
-            .then(value => setCharacters(value.results.characters))
-    }, [])
+        let charactersArray = [
+            'https://rickandmortyapi.com/api/character/2',
+            'https://rickandmortyapi.com/api/character/35',
+            'https://rickandmortyapi.com/api/character/38'
+        ]
 
 
-    console.log(characters)
-
-
-    return (
-        <div>
-
-        </div>
-    );
-};
+        return (
+            <div>
+                {
+                    charactersArray.map(character => <Character character={character}/>)
+                }
+            </div>
+        );
+    }
+;
 
 export default Component1;
