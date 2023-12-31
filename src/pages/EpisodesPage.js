@@ -1,5 +1,6 @@
 import React from 'react';
-import Episodes from "../components/EpisodesContainer/Episodes/Episodes";
+
+import {Episodes} from "../components";
 
 const EpisodesPage = () => {
     return (
@@ -9,4 +10,4 @@ const EpisodesPage = () => {
     );
 };
 
-export default EpisodesPage;
+export {EpisodesPage};

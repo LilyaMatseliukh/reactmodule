@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {episodeService} from "../../services/episodeService";
-import Character from "../character";
+
+import {episodeService} from "../../services";
+import {Character} from "./Сharacter";
 
 const Characters = ({id}) => {
     const [characters, setCharacters] = useState([]);
@@ -18,4 +19,4 @@ const Characters = ({id}) => {
     );
 };
 
-export default Characters;
+export {Characters};

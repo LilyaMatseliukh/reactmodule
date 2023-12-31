@@ -4,9 +4,11 @@ import {RouterProvider} from "react-router-dom";
 
 import {router} from "./router";
 import './index.css';
+import {ContextProvider} from "./hoc";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <RouterProvider router={router}/>
-    // <Component/>
+    <ContextProvider>
+        <RouterProvider router={router}/>
+    </ContextProvider>
 );

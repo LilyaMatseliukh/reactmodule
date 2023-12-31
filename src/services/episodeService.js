@@ -1,5 +1,6 @@
 import {axiosService} from "./axiosService";
-import {urls} from "../constants/urls";
+
+import {urls} from "../constants";
 
 const episodeService = {
     getAll: (page='1') => axiosService.get(urls.episodes, {params: {page}}),

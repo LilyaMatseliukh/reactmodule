@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {createBrowserRouter, useSearchParams} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 
-import {episodeService} from "../../../services/episodeService";
-import Episode from "../Episode/Episode";
 import css from './Episodes.module.css';
+import {Episode} from "../Episode/Episode";
+import {episodeService} from "../../../services";
 
 const Episodes = () => {
     const [episodes, setEpisodes] = useState([]);
@@ -20,6 +20,7 @@ const Episodes = () => {
         });
     }, [query.get('page')]);
 
+    // PRACTICE
     // const characters = [
     //     'https://rickandmortyapi.com/api/character/1',
     //     'https://rickandmortyapi.com/api/character/2'
@@ -68,4 +69,4 @@ const Episodes = () => {
     );
 };
 
-export default Episodes;
+export {Episodes};

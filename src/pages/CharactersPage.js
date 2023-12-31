@@ -1,6 +1,7 @@
 import React from 'react';
-import {useLoaderData, useLocation} from "react-router-dom";
-import Characters from "../components/CharactersContainer/Characters";
+import {useLocation} from "react-router-dom";
+
+import {Characters} from "../components";
 
 const CharactersPage = () => {
     const {state: id} = useLocation();
@@ -12,4 +13,4 @@ const CharactersPage = () => {
     );
 };
 
-export default CharactersPage;
+export {CharactersPage};

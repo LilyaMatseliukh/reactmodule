@@ -1,5 +1,5 @@
 import React from 'react';
-import Character from "./character";
+import Haracter from "../CharactersContainer/Сharacter";
 // import * as constants from "constants";
 
 const Component1 = () => {
@@ -31,7 +31,7 @@ const Component1 = () => {
         return (
             <div>
                 {
-                    charactersArray.map(character => <Character character={character}/>)
+                    charactersArray.map(character => <Haracter character={character}/>)
                 }
             </div>
         );
